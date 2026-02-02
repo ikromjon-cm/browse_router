@@ -1,4 +1,5 @@
 import React from 'react';
+import './Header.css'
 
 const Header = ({data}) => {
   return (
@@ -13,6 +14,7 @@ const Header = ({data}) => {
                 <li>{item.link}</li>
             </ul>
         </nav>
+        <button>{item.btn}</button>
     </div>
     
     )}
