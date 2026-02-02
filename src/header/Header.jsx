@@ -11,7 +11,9 @@ const Header = ({data}) => {
         </div>
         <nav>
             <ul>
-                <li>{item.link}</li>
+                {data.map((item,index)=>
+                <li key={index}>{item.link}</li>
+                )}
             </ul>
         </nav>
         <button>{item.btn}</button>
